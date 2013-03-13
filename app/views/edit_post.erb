@@ -9,33 +9,32 @@
           <%= checked %>> <%= category.name %>
       </li>
     <% end %>
-    
+    <BR>
     <input type="hidden" name="id" value="<%= @post.id %>">
 
     <li>
-      Title: 
-      <input type="text" name="title" value="<%= @post.title %>">
-    </li>
+      Title:<BR>
+      <input type="text" name="title" size="65" value="<%= @post.title %>">
+    </li><BR>
 
-    <li>Description: 
-      <textarea rows="10", cols="50", name="description"><%= @post.description %></textarea>
-    </li>
+    <li>Description:<BR>
+      <textarea rows="10", cols="64.9", name="description"><%= @post.description %></textarea>
+    </li><BR>
 
-    <li>Price: 
-      <input type="text" name="price" value="<%= @post.price %>">
-    </li>
+    <li>Price: <BR>
+      <input type="text" name="price" size="7" value="<%= @post.price %>">
+    </li><BR>
 
-    <li>Email: 
-      <input type="text" name="email" value="<%= @post.email %>">
-    </li>
+    <li>Email: <BR>
+      <input type="text" name="email" size="20" value="<%= @post.email %>">
+    </li><BR>
 
     <li>
       <input type="submit" value="Submit!">
-    </li>
+    </li><BR>
   </form>
   <form action="/delete" method="post" >
     <input type="hidden" name="secret_url" value="<%= @post.secret_url %>">
     <input type="submit" value="Delete post">
   </form>
 </div>
-

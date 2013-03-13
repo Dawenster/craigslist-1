@@ -1,7 +1,18 @@
 <div class="container">
   <h1><%= @post.title %></h1>
-  <li>Category: <%= @category.name %></li>
-  <li>Description: <%= @post.description %></li>
-  <li>$<%= @post.price %></li>
-  <li>Contact: <%= @post.email %></li>
+  <li>
+    <strong>Category:</strong><BR>
+      <%= @category.name %>
+  </li>
+  <li>
+    <strong>Description:</strong><BR>
+    <%= @post.description %>
+  </li>
+  <li>
+    <strong>Price:</strong>
+    $<%= @post.price %>
+  </li>
+  <li>
+    <strong>Contact:</strong>
+    <%= @post.email %></li>
 </div>

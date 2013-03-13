@@ -1,15 +1,32 @@
 <div class="container">
   <h1>Create post</h1>
-  <form action="/created" method="post" name="create-post-form">
-    <% categories.each do |category| %>
-      <li><input type="radio" name="category_id" value="<%= category.id %>"> <%= category.name %></li>
-    <% end %>
-    
-    <li>Title: <input type="text" name="title"></li>
-    <li>Description: <textarea rows="10", cols="50", name="description"></textarea></li>
-    <li>Price: <input type="text" name="price"></li>
-    <li>Email: <input type="text" name="email"></li>
-    <li><input type="submit" value="Submit!"></li>
-  </form>
+  <div id="formy-thing">
+    <form action="/created" method="post" name="create-post-form" id="create-post">
+      <li>
+        Select category:
+      </li>
+      <% categories.each do |category| %>
+        <li><input type="radio" name="category_id" value="<%= category.id %>"> <%= category.name %></li>
+      <% end %><BR>
+      <li>
+        Title:<BR>
+        <input type="text" name="title" size="65">
+      </li><BR>
+      <li>
+        Description:<BR><textarea rows="10", cols="64", name="description"></textarea>
+      </li><BR>
+      <li>
+        Price:<BR>
+        <input type="text" name="price" size="7" value="$">
+      </li><BR>
+      <li>
+        Email:<BR>
+        <input type="text" name="email" size="20">
+      </li><BR>
+      <li>
+        <input type="submit" value="Submit!">
+      </li>
+    </form>
+  </div>
 </div>
 

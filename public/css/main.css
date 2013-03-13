@@ -1,13 +1,23 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #ccc;
+  text-shadow: 1px 1px black;
   background-image:url('../bg.png');
+}
+
+strong {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .container {
   margin: auto;
   width: 600px;
-  padding: 0px 20px 0px 20px;
-  border: 1px dotted black;
+  padding: 0px 20px 20px 20px;
+  border: 1px solid black;
+  background-color: #2D2D2D;
 }
 
 th {
@@ -15,19 +25,22 @@ th {
 }
 
 a {
-  color: #2A4880;
+  color: #679ED2;
   text-decoration: none;
 }
 
 h1 {
-  color: #06266F;
+  color: #fff;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
+  font-size: 3.6em;
+  letter-spacing: -4px;
+  text-shadow: 1px 1px black;
 }
 
 #logo {
   float:left;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
   padding-left: 20px;
@@ -35,12 +48,16 @@ h1 {
 
 #links {
   float:right;
+  font-style: italic;
   padding-right: 20px;
   font-size: 1.2em;
 }
 
+.categories {
+  margin-top: -20px;
+}
+
 nav {
-  /*position: fixed;*/
   float: right;
   background-color: black;
   margin-left: auto;
@@ -63,4 +80,9 @@ nav li {
 
 li {
   list-style: none;
+}
+
+.numbered {
+  list-style: decimal;
+  line-height: 1.6em;
 }
