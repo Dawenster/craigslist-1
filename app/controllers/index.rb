@@ -40,5 +40,5 @@ get '/:id' do
 end
 
 def categories
-  @all_categories = Categories.all
+  Categories.all
 end

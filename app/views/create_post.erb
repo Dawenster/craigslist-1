@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Create post</h1>
   <form action="/created" method="post" name="create-post-form">
-    <% @all_categories.each do |category| %>
+    <% categories.each do |category| %>
       <li><input type="radio" name="category_id" value="<%= category.id %>"> <%= category.name %></li>
     <% end %>
     
