@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>All Lists</h1>
+  <div class="categories">
+    <% @all_categories.each do |category| %>
+      <li><a href="<%= category.id %>">
+        <%= category.name %>
+      </a></li>
+    <% end %>
+  </div>
+</div>
